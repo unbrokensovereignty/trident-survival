@@ -193,9 +193,9 @@ local Library do
             ["Outline"] = FromRGB(61, 60, 65),
             ["Page Background"] = FromRGB(49, 48, 52),
             ["Border"] = FromRGB(31, 25, 36),
-            ["Accent"] = FromRGB(139, 69, 182),
+            ["Accent"] = FromRGB(0, 80, 255),
             ["Text Border"] = FromRGB(0, 0, 0),
-            ["Light Accent"] = FromRGB(139, 94, 216),
+            ["Light Accent"] = FromRGB(0, 125, 255),
             ["Element"] = FromRGB(39, 39, 44),
             ["Text"] = FromRGB(230, 230, 230),
             ["Inactive Text"] = FromRGB(185, 185, 185)
