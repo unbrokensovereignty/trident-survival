@@ -1,101 +1,6 @@
 --[[
-    bitchbot v1
-    Made by samet
-
-    Example at bottom
-    Assign different flags to each element to prevent from configs overriding eachother
-
-    Documentation:
-    function Library:Notification(Text: string, Duration: number/float, Color: Color3)
-
-    function Library:Window(Data: table
-        Name/name: string,
-        Size/size: UDim2,
-        FadeSpeed/fadespeed: number/float
-    )
-
-    function Window:Page(Data: table
-        Icon/icon: string,
-        Columns/columns: number
-    )
-
-    function Page:Section(Data: table
-        Name/name: string,
-        Side/side: number
-    )
-
-    function Section:Label(Text: string, Alignment: string)
-        function Label:Keybind(Data: table
-            Name/name: string,
-            Mode/mode: string,
-            Default/default: EnumItem,
-            Flag/flag: string,
-            Callback/callback: function
-        )
-
-        function Label:Colorpicker(Data: table
-            Name/name: string,
-            Flag/flag: string,
-            Default/default: Color3,
-            Alpha/alpha: number,
-            Callback/callback: function
-        )
-    
-    function Section:Button(void)
-        function Button:NewButton(Data: table
-            Name/name: string,
-            Callback/callback: function
-        )
-
-    function Section:Toggle(Data: table
-        Name/name: string,
-        Default/default: boolean,
-        Flag/flag: string,
-        Callback/callback: function
-    )
-        function Toggle:Keybind(Data: table
-            Name/name: string,
-            Mode/mode: string,
-            Default/default: EnumItem,
-            Flag/flag: string,
-            Callback/callback: function
-        )
-
-        function Toggle:Colorpicker(Data: table
-            Name/name: string,
-            Flag/flag: string,
-            Default/default: Color3,
-            Alpha/alpha: number,
-            Callback/callback: function
-        )
-
-    function Section:Slider(Data: table
-        Name/name: string,
-        Min/min: number,
-        Max/max: number,
-        Decimals/decimals: number,
-        Default/default: number,
-        Suffix/suffix: string,
-        Flag/flag: string,
-        Callback/callback: function
-    )
-
-    function Section:Dropdown(Data: table
-        Name/name: string,
-        Default/default: string,
-        Flag/flag: string,
-        Multi/multi: boolean,
-        Items/items: table,
-        Callback/callback: function
-    )
-
-    function Section:Textbox(Data: table
-        Name/name: string,
-        Default/default: string,
-        Placeholder/placeholder: string,
-        Flag/flag: string,
-        Callback/callback: function
-    )
+morphine v1.0
+made by sovereign
 ]]
 
 if getgenv().Library and getgenv().Library.Unload then 
@@ -166,9 +71,9 @@ local Library do
         },
 
         Folders = {
-            Directory = "bitchbot",
-            Configs = "bitchbot/Configs",
-            Assets = "bitchbot/Assets",
+            Directory = "morphine",
+            Configs = "morphine/Configs",
+            Assets = "morphine/Assets",
         },
 
         Images = {
@@ -2059,7 +1964,7 @@ local Library do
             Data = Data or { }
 
             local Window = {
-                Name = Data.Name or Data.name or "bitchbot",
+                Name = Data.Name or Data.name or "morphine",
                 FadeSpeed = Data.FadeSpeed or Data.fadespeed or 0.25,
                 Size = Data.Size or Data.size or UDim2New(0, 763, 0, 530),
 
