@@ -2302,7 +2302,7 @@ local Library do
                     Instances:Create("UIListLayout", {
                         Parent = NewColumn.Instance,
                         Name = "\0",
-                        Padding = UDimNew(0, 12),
+                        Padding = UDimNew(0, 22),
                         SortOrder = Enum.SortOrder.LayoutOrder
                     })
 
@@ -2471,7 +2471,7 @@ local Library do
                 Instances:Create("UIListLayout", {
                     Parent = Items["Content"].Instance,
                     Name = "\0",
-                    Padding = UDimNew(0, 8),
+                    Padding = UDimNew(0, 14),
                     SortOrder = Enum.SortOrder.LayoutOrder
                 })
 
